@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精神状态评估</title>
+</head>
+<body>
+<form action="/oldpeoplepress_war_exploded/spiritassess" method="get">
+    <table align="center" border="1">
+        <tr>
+            <td>请输入老年人身份证号:</td>
+            <td><input type="text" name="idcard"></td>
+        </tr>
+        <tr>
+            <td>认知功能</td>
+            <td><input type="radio" name="know" value="正常">正常<input type="radio" name="know" value="轻微">轻微<input type="radio" name="know" value="有影响">有影响</td>
+        </tr>
+        <tr>
+            <td>攻击行为</td>
+            <td><input type="radio" name="attack" value="无">无<input type="radio" name="attack" value="少">少<input type="radio" name="attack" value="中">中</td>
+        </tr>
+        <tr>
+            <td>抑郁症状</td>
+            <td><input type="radio" name="depression" value="无">无<input type="radio" name="depression" value="轻微">轻微<input type="radio" name="depression" value="重">重</td>
+        </tr>
+        <tr>
+            <td>分级</td>
+            <td><input type="radio" name="grade" value="能力完好">能力完好<input type="radio" name="grade" value="轻度受损">轻度受损<input type="radio" name="grade" value="受损严重">受损严重</td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="提交"></td>
+            <td><input type="reset" value="重置"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

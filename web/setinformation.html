@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>单个信息录入</title>
+</head>
+<body>
+<form action="/oldpeoplepress_war_exploded/insertpeople" method="get" >
+    <table align="center">
+    <hr>
+    <tr><td><table align="center" border="1" bgcolor="#00ffff">
+        <tr><td>被评估者的基本信息表</td></tr>
+        <tr><td></td><td>姓名：<input type="text" name="name"></td></tr>
+        <tr><td></td><td>性别：<input type="radio" name="sex" value="男">男<input type="radio" name="sex" value="女">女</td></tr>
+        <tr><td></td><td>出生日期：<input type="text" name="birth"></td></tr>
+        <tr><td></td><td>身份证号：<input type="text" name="idcard"></td></tr>
+        <tr><td></td><td>社保卡号：<input type="text" name="sscard"></td></tr>
+        <tr><td></td><td>民族：<input type="text" name="nation"></td></tr>
+        <tr><td></td><td>文化程度: <input type="radio" name="culture" value="1 文盲">1 文盲<input type="radio" name="culture" value="2 小学">2 小学<input type="radio" name="culture" value="3 初中">3 初中<input type="radio" name="culture" value="4 高中">4 高中<input type="radio" name="culture" value="5 大学">5 大学<input type="radio" name="culture" value="6 不详">6 不详</td></tr>
+        <tr><td></td><td>宗教信仰：<input type="text" name="religion"></td></tr>
+        <tr><td></td><td>婚姻状况： <input type="radio" name="marriage" value="1 未婚">1 未婚<input type="radio" name="marriage" value="2 已婚">2 已婚<input type="radio" name="marriage" value="3 丧偶">3 丧偶<input type="radio" name="marriage" value="4 离婚">4 离婚<input type="radio" name="marriage" value="5 未说明的婚姻状况">5 未说明的婚姻状况</td></tr>
+        <tr><td></td><td>居住状况 <input type="radio" name="live" value="1 独居">1 独居<input type="radio" name="live" value="2 与配偶/伴侣居住">2 与配偶/伴侣居住<input type="radio" name="live" value="3 与子女居住">3 与子女居住<input type="radio" name="live" value="4 与父母居住">4 与父母居住<input type="radio" name="live" value="5 与兄弟姐妹居住">5 与兄弟姐妹居住<input type="radio" name="live" value="6 与其他亲属居住">6 与其他亲属居住<input type="radio" name="live" value="7 与非亲属关系的人居住">7 与非亲属关系的人居住<input type="radio" name="live" value="8 养老机构">8 养老机构</td></tr>
+        <tr><td></td><td>医疗费支付方式 <input type="radio" name="medfee" value="1 城镇职工基本医疗保险">1 城镇职工基本医疗保险<input type="radio" name="medfee" value="2 城镇居民基本医疗保险">2 城镇居民基本医疗保险<input type="radio" name="medfee" value="3 新型农村合作医疗">3 新型农村合作医疗<input type="radio" name="medfee" value="4 贫困救助">4 贫困救助<input type="radio" name="medfee" value="5 商业医疗保险">5 商业医疗保险<input type="radio" name="medfee" value="6 全公费">6 全公费<input type="radio" name="medfee" value="7 全自费">7 全自费<input type="radio" name="medfee" value="8 其他">8 其他</td></tr>
+        <tr><td></td><td>经济来源 <input type="radio" name="finsource" value="1 退休金/养老金">1 退休金/养老金<input type="radio" name="finsource" value="2 子女补贴">2 子女补贴<input type="radio" name="finsource" value="3 亲友资助">3 亲友资助<input type="radio" name="finsource" value="4 其他补贴">4 其他补贴</td></tr>
+        <tr><td rowspan="3">疾病诊断</td><td>痴呆 <input type="radio" name="silly" value="0 无">0 无<input type="radio" name="silly" value="1 轻度">1 轻度<input type="radio" name="silly" value="2 中度">2 中度<input type="radio" name="silly" value="3 重度">3 重度</td></tr>
+        <tr><td>精神病 <input type="radio" name="mental" value="0 无">0 无<input type="radio" name="mental" value="1 精神分裂症">1 精神分裂症<input type="radio" name="mental" value="2 双相情感障碍">2 双相情感障碍<input type="radio" name="mental" value="3 偏执性精神障碍">3 偏执性精神障碍<input type="radio" name="mental" value="4 分裂情感性障碍">4 分裂情感性障<input type="radio" name="mental" value="5 癫痫所致精神障碍">5 癫痫所致精神障碍<input type="radio" name="mental" value="6 精神发育迟滞伴发精神障碍">6 精神发育迟滞伴发精神障碍</td></tr>
+        <tr><td>慢性病: <input type="text" name="chdisease"></td></tr>
+        <tr><td rowspan="5">近30天意外情况</td><td>跌倒 <input type="radio" name="fall" value="0 无">0 无<input type="radio" name="fall" value="1 发生过 1 次">1 发生过 1 次<input type="radio" name="fall" value="2 发生过 2 次">2 发生过 2 次<input type="radio" name="fall" value="3 发生过 3 次及以上">3 发生过 3 次及以上</td></tr>
+        <tr><td>走失 <input type="radio" name="lost" value="0 无">0 无<input type="radio" name="lost" value="1 发生过 1 次">1 发生过 1 次<input type="radio" name="lost" value="2 发生过 2 次">2 发生过 2 次<input type="radio" name="lost" value="3 发生过 3 次及以上">3 发生过 3 次及以上</td></tr>
+        <tr><td>噎食 <input type="radio" name="choke" value="0 无">0 无<input type="radio" name="choke" value="1 发生过 1 次">1 发生过 1 次<input type="radio" name="choke" value="2 发生过 2 次">2 发生过 2 次<input type="radio" name="choke" value="3 发生过 3 次及以上">3 发生过 3 次及以上</td></tr>
+        <tr><td>自杀 <input type="radio" name="death" value="0 无">0 无<input type="radio" name="death" value="1 发生过 1 次">1 发生过 1 次<input type="radio" name="death" value="2 发生过 2 次">2 发生过 2 次<input type="radio" name="death" value="3 发生过 3 次及以上">3 发生过 3 次及以上</td></tr>
+        <tr><td>其他 :<input type="text" name="other"></td></tr>
+    </table></td></tr>
+
+    <hr>
+        <tr>
+            <td><input type="submit" value="提交"></td>
+            <td><input type="reset" value="重置"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

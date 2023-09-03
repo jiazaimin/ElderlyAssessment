@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="oldpeoplepress:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/oldpeoplepress_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="oldpeoplepress/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="oldpeoplepress" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
